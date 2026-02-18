@@ -10,16 +10,16 @@
 }
 
 .Link:hover {
-    color: orange;
+    color: orange !important;
 }
 
 .Link.active {
-    color: gold;
+    color: gold !important;
     font-weight: italic;
 }
 
 .Link.active:hover {
-    color: orange;
+    color: orange !important;
 }
 
 .header {
@@ -40,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+
