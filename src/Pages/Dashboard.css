@@ -1,0 +1,112 @@
+/* Dashboard.css */
+
+/* Main Layout */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 3rem auto; /* Centers container and adds top margin */
+  padding: 0 1rem;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-weight: bold;
+  font-size: 2.5rem; /* Equivalent to display-4 */
+  color: #212529;    /* Bootstrap dark */
+}
+
+.welcome-subtitle {
+  font-size: 1.25rem; /* Equivalent to lead */
+  color: #6c757d;     /* Bootstrap secondary */
+}
+
+/* Grid Layout (Replaces row/col clutter) */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Styling */
+.dashboard-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* shadow-sm */
+  padding: 2rem;
+  min-height: 350px;       /* The fix we added earlier */
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: center;
+  text-align: center;
+  border: none;            /* Removes default border */
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Adds a subtle lift effect */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 2.5rem; /* fs-1 */
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.action-btn {
+  margin-top: auto; /* Pushes button to bottom */
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Specific Button Themes */
+.btn-primary-custom {
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid #0d6efd;
+}
+
+.btn-primary-custom:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: #212529;
+  border: 1px solid #212529;
+}
+
+.btn-outline-custom:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.btn-brand-custom {
+  background-color: transparent;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+
+.btn-brand-custom:hover {
+  background-color: #0d6efd;
+  color: white;
+}
